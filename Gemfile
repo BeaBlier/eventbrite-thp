@@ -17,6 +17,7 @@ gem 'bootswatch'
 gem 'jquery-rails'
 
 
+
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug',  '9.0.6', platform: :mri

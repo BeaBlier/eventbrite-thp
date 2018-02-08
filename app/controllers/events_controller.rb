@@ -1,5 +1,6 @@
 class EventsController < ApplicationController
   def new
+    @event = current_user.events.build
   end
 
   def create
@@ -10,7 +11,12 @@ class EventsController < ApplicationController
     # render new
     # end
     @event = current_user.events.new(event_params)
+    byebug
     @event.save
+  end
+
+  def index
+    @events = Event.all
   end
 
   def show

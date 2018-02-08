@@ -259,6 +259,7 @@ DEPENDENCIES
   listen
   pg (= 0.20.0)
   poltergeist
+  pry
   pry-byebug
   pry-rails
   puma
